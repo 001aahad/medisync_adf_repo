@@ -1,0 +1,11 @@
+{
+	"name": "LS_ADLS_GEN2",
+	"properties": {
+		"description": "link service to connect data lake storage",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://medisyncproject.dfs.core.windows.net/"
+		}
+	}
+}
