@@ -144,7 +144,7 @@
 					"notebookPath": "/medisync_repo/medisync_adb_repo/Raw_to_Bronze",
 					"baseParameters": {
 						"landing_timestamp": {
-							"value": "@activity('Read Table Details').output.firstRow.variables('start_time')",
+							"value": "@variables('start_time')",
 							"type": "Expression"
 						},
 						"source_system": {
@@ -185,11 +185,11 @@
 					"notebookPath": "/medisync_repo/medisync_adb_repo/Bronze_to_Silver",
 					"baseParameters": {
 						"landing_timestamp": {
-							"value": "@activity('Read Table Details').output.firstRow.variables('start_time')",
+							"value": "@variables('start_time')",
 							"type": "Expression"
 						},
 						"table_name": {
-							"value": "@activity('Read Table Details').output.firstRow.bronze_table_name",
+							"value": "@activity('Read Table Details').output.firstRow.silver_table_name",
 							"type": "Expression"
 						}
 					}
